@@ -1,0 +1,212 @@
+* {
+    font-family: 'Knewave';
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.display {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#map {
+    height: 85vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.leaflet-right {
+    display: none;
+}
+
+.onClick1 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    width: 100vw;
+    background-color: hsla(0, 0%, 0%, 0.514);
+
+}
+
+.onClick {
+    display: flex;
+    border-bottom: 2px solid black;
+}
+
+.addFav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 100vw;
+    height: 85vh;
+    overflow: scroll;
+    background-color: hsla(0, 0%, 0%, 0.514);
+}
+
+.imgDes {
+    justify-content: flex-start;
+    margin: 1rem 5rem 0 1rem;
+    height: 25vh;
+    width: 25vw;
+}
+
+.titreAdresses {
+    width: 33vw;
+    margin: 1rem 1rem 0 0rem;
+    color: white;
+    width: 35vw;
+}
+
+.adresseDescription {
+    width: 35vw;
+}
+
+.titreDes {
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+
+}
+
+.btndescription {
+    display: flex;
+    max-width: fit-content;
+    margin: 1rem 0 0 5rem;
+}
+
+
+.btnFav {
+    width: 7rem;
+    height: 3rem;
+    font-size: large;
+    color: green;
+}
+
+.btnFav:hover {
+    color: white;
+    background-color: green;
+    transform: scale(1.2);
+}
+
+.btnSupp {
+    width: 3rem;
+    height: 3rem;
+    font-size: large;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.btnSupp:hover {
+    color: white;
+    background-color: red;
+    transform: scale(1.2);
+}
+
+.btn {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+}
+
+.fa-map-marked-alt {
+    color: rgb(104, 137, 147);
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fav,
+.carte {
+    flex-wrap: wrap;
+    width: 50%;
+    text-decoration: none;
+    font-size: xx-large;
+    background-color: white;
+    border-left: solid 1px white;
+    text-decoration: none;
+
+}
+
+a,
+.fav:visited,
+.carte:visited {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #textbtn1,
+    #textbtn2 {
+        display: none;
+    }
+
+
+    #icon1 {
+        transform: scale(1.4);
+        color: white;
+    }
+
+    #icon2 {
+        color: red;
+        transform: scale(1.4)
+    }
+
+    .fav {
+        background-color: white;
+    }
+
+    .carte {
+        background-color: rgb(104, 137, 147);
+    }
+
+    .onClick {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .onClick1{
+        background-color: hsla(0, 0%, 0%, 0,5);;
+    }
+
+    .imgDes {
+        margin: 3rem 0 0 1rem;
+        height: 15vh;
+        width: 40vw;
+    }
+
+    .titreAdresses {
+        width: 80vw;
+        margin: 1rem 3rem 1rem 0rem;
+        color: white;
+        justify-content: center;
+    }
+
+    .titreAdresses h1{
+        margin-left: 2rem;
+        font-size: medium;
+        text-decoration: underline;
+    }
+
+    .adresseDescription {
+        width: 80vw;
+        margin: 1rem 1rem 0 2rem;
+        color: white;
+    }
+
+    .btndescription {
+        margin: 2rem 0 0 0;
+    }
+
+}
